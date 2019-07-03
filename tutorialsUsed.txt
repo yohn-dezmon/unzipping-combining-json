@@ -1,0 +1,10 @@
+https://realpython.com/working-with-files-in-python/
+
+https://stackoverflow.com/questions/23520542/issue-with-merging-multiple-json-files-in-python
+
+https://stackoverflow.com/questions/19859840/excluding-directories-in-os-walk
+
+this is somewhat helpful, but all the examples are done on ONE zip file...
+what if i have many zip files in a folder?
+
+https://stackoverflow.com/questions/31346790/unzip-all-zipped-files-in-a-folder-to-that-same-folder-using-python-2-7-5
