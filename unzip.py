@@ -2,7 +2,7 @@ from zipfile import ZipFile
 import os
 
 # This file goes through the a folder containing all of the zip files
-# and extracts their hr and s folders. 
+# and extracts their hr and s folders.
 
 dir_name = '/Users/HomeFolder/Desktop/CongressBills'
 extension = ".zip"
@@ -48,3 +48,13 @@ for item in os.listdir(dir_name): # loop through items in dir
                     if file.startswith(d): # applying a filter by a specific directory
                         zip_ref.extract(file, dir_name)
             zip_ref.close()
+        elif congressNumber == "113":
+            file_name = os.path.abspath(item) # get full path of files
+            zip_ref = ZipFile(file_name)
+            listOfFileNames = zip_ref.namelist()
+            # 113/sres/sres597-113-rs.xml
+            listOfSubDirs = [congressNumber+"/s/", congressNumber+"/hr/"]
+            for file in listOfFileNames:
+                for d in listOfSubDirs:
+                    if file.startswith(d): # applying a filter by a specific directory
+                        zip_ref.extract(file, dir_name)

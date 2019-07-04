@@ -20,4 +20,3 @@ for item in os.listdir(dir_name): # loop through items in dir
         listOfFileNames = zip_ref.namelist() # creates a list of all of the paths within the .zip
         for file_or_dir in listOfFileNames:
             print(file_or_dir)
-        

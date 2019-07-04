@@ -8,3 +8,10 @@ this is somewhat helpful, but all the examples are done on ONE zip file...
 what if i have many zip files in a folder?
 
 https://stackoverflow.com/questions/31346790/unzip-all-zipped-files-in-a-folder-to-that-same-folder-using-python-2-7-5
+
+
+xml to json
+https://pypi.org/project/xmljson/
+
+reading xml
+https://docs.python.org/2/library/xml.etree.elementtree.html
